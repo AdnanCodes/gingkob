@@ -8,6 +8,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
 import { makeStyles } from "@material-ui/core/styles";
 
+import { Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
@@ -54,7 +55,7 @@ const Navigation = () => {
         aria-haspopup="true"
         onClick={handleToggle}
       >
-        Menu
+        <Typography variant="h4">Menu</Typography>
       </Button>
       <Popper
         open={open}
@@ -74,8 +75,20 @@ const Navigation = () => {
             <Paper>
               <ClickAwayListener onClickAway={handleClose}>
                 <MenuList autoFocusItem={open} id="menu-list-grow">
-                  <MenuItem onClick={handleClose}> Home</MenuItem>
-                  <MenuItem onClick={handleClose}>About</MenuItem>
+                  <MenuItem onClick={handleClose} component={Link} to="/">
+                    {" "}
+                    <Typography variant="h4">Home</Typography>
+                  </MenuItem>
+                  <MenuItem onClick={handleClose} component={Link} to="/about">
+                    <Typography variant="h4">About</Typography>
+                  </MenuItem>
+                  <MenuItem
+                    onClick={handleClose}
+                    component={Link}
+                    to="/products"
+                  >
+                    <Typography variant="h4">Products</Typography>
+                  </MenuItem>
                   {/* <MenuItem onClick={handleClose}>Logout</MenuItem> */}
                 </MenuList>
               </ClickAwayListener>
