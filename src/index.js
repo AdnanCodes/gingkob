@@ -4,12 +4,21 @@ import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import "./index.scss";
 
+// Styles
+import theme from "./mui/custom-theme";
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import CssBaseLine from "@material-ui/core/CssBaseLine";
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>,
+  <MuiThemeProvider theme={theme}>
+    <React.StrictMode>
+      <CssBaseLine />
+      <Router>
+        <App />
+      </Router>
+    </React.StrictMode>
+    ,
+  </MuiThemeProvider>,
   document.getElementById("root")
 );
 

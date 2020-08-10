@@ -1,5 +1,4 @@
 import React from "react";
-import Navigation from "./Nav.jsx";
 // import { Link } from "react-router-dom";
 import "./Home.scss";
 //Material UI
@@ -15,22 +14,13 @@ import { Typography, Container, Grid } from "@material-ui/core";
 const Home = () => {
   return (
     <Container>
-      <Grid
-        container
-        display="flex"
-        alignContent="center"
-        justify="space-evenly"
-      >
-        <Typography align="center" variant="h1">
-          Gingko B.
+      <Grid container display="flex" direction="column" alignItems="center">
+        <Typography variant="h2">Welcome to my site!</Typography>
+        <Typography variant="h3" className="intro">
+          Hi! I am Autumn and I work in Fiber Art, Knitwear Design, and Handmade
+          Wardrobe
         </Typography>
-        <Navigation />
       </Grid>
-      <section className="intro">
-        Welcome to my site! <br />
-        Hi! I am Autumn and I work in Fiber Art, Knitwear Design, and Handmade
-        Wardrobe
-      </section>
     </Container>
   );
 };
