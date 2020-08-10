@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <Typography variant="h6" align="center">
-        <CopyrightIcon fontSize="inherit" /> Autumn || GingKo B.{" "}
+        <CopyrightIcon fontSize="inherit" /> Autumn || Gingko B.
         {new Date().getFullYear()}
       </Typography>
     </div>
