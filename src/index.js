@@ -7,7 +7,7 @@ import "./index.scss";
 // Styles
 import theme from "./mui/custom-theme";
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import CssBaseLine from "@material-ui/core/CssBaseLine";
+import CssBaseLine from "@material-ui/core/CssBaseline";
 
 ReactDOM.render(
   <MuiThemeProvider theme={theme}>
@@ -17,7 +17,6 @@ ReactDOM.render(
         <App />
       </Router>
     </React.StrictMode>
-    ,
   </MuiThemeProvider>,
   document.getElementById("root")
 );
