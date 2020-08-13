@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> The source code for Gingko B. This is a static React app
+> The source code for Gingko B. This is a static React app showcasing info from Gingoko B.
 
 ### 🏠 [Homepage]()
 
@@ -38,7 +38,7 @@ yarn start
 
 👤 **Abdirahman Farah**
 
-- Website: []()
+- Website: [abdirahmanfarah.com](https://abdirahmanfarah.com/)
 - Twitter: [@the_real_abdi](https://twitter.com/the_real_abdi)
 - Github: [abdirahmanfarah](https://github.com/abdirahmanfarah)
 - LinkedIn: [abdirahman-farah](https://www.linkedin.com/in/abdirahman-farah/)
