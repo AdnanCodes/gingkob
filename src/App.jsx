@@ -9,6 +9,16 @@ import Products from "./components/Products.jsx";
 import Footer from "./components/Footer";
 // Styles
 import { Typography, Grid } from "@material-ui/core";
+import "./App.scss";
+// import { makeStyles } from "@material-ui/core/styles";
+
+// const useStyles = makeStyles({
+//   // root: {
+//   // },
+//   variant: {
+//     fontSize: 3
+//   },
+// });
 
 function App() {
   return (
@@ -18,9 +28,9 @@ function App() {
           container
           display="flex"
           alignContent="center"
-          justify="space-evenly"
+          justify="space-between"
         >
-          <Typography align="center" variant="h1">
+          <Typography align="center" variant="h1" className="title">
             Gingko B.
           </Typography>
           <Navigation />
