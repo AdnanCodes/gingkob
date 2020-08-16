@@ -3,9 +3,9 @@ import { createMuiTheme } from "@material-ui/core/styles";
 const theme = createMuiTheme({
   typography: {
     htmlFontSize: 10,
-    fontFamily: "Roboto",
+    fontFamily: "Comfortaa",
     h1: {
-      fontSize: "3.7rem",
+      fontSize: "3rem",
       fontWeight: "400",
     },
     h2: {
