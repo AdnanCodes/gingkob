@@ -1,12 +1,16 @@
 import React from "react";
 import "./Footer.scss";
 // Styles
-import { Typography } from "@material-ui/core";
-import CopyrightIcon from "@material-ui/icons/Copyright";
-import InstagramIcon from "@material-ui/icons/Instagram";
-import TwitterIcon from "@material-ui/icons/Twitter";
-import YouTubeIcon from "@material-ui/icons/YouTube";
-import EmailRoundedIcon from "@material-ui/icons/EmailRounded";
+import { Typography, Grid, Divider } from "@material-ui/core";
+
+//Icons
+import {
+  Copyright,
+  Instagram,
+  Twitter,
+  YouTube,
+  EmailRounded,
+} from "@material-ui/icons";
 
 const Footer = () => {
   const goToMedialinks = (links) => {
@@ -31,33 +35,37 @@ const Footer = () => {
     }
   };
   return (
-    <div className="footer">
-      <Typography variant="h6" align="center">
-        <CopyrightIcon fontSize="inherit" /> Autumn || Gingko B.{" "}
-        {new Date().getFullYear()}
-        <br />
-        <InstagramIcon
-          className="icons"
-          fontSize="small"
-          onClick={() => goToMedialinks("instagram")}
-        />
-        <TwitterIcon
-          className="icons"
-          fontSize="small"
-          onClick={() => goToMedialinks("twitter")}
-        />
-        <YouTubeIcon
-          className="icons"
-          fontSize="small"
-          onClick={() => goToMedialinks("youtube")}
-        />
-        <EmailRoundedIcon
-          className="icons"
-          fontSize="small"
-          onClick={() => goToMedialinks("email")}
-        />
-      </Typography>
-    </div>
+    <section>
+      <div className="footer">
+        <Typography variant="h6" align="center">
+          <Copyright fontSize="inherit" /> Autumn || Gingko B.{" "}
+          {new Date().getFullYear()}
+          <br />
+          <Grid container display="flex" justify="space-between">
+            <Instagram
+              className="icons"
+              fontSize="small"
+              onClick={() => goToMedialinks("instagram")}
+            />
+            <Twitter
+              className="icons"
+              fontSize="small"
+              onClick={() => goToMedialinks("twitter")}
+            />
+            <YouTube
+              className="icons"
+              fontSize="small"
+              onClick={() => goToMedialinks("youtube")}
+            />
+            <EmailRounded
+              className="icons"
+              fontSize="small"
+              onClick={() => goToMedialinks("email")}
+            />
+          </Grid>
+        </Typography>
+      </div>
+    </section>
   );
 };
 export default Footer;
