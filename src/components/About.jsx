@@ -7,7 +7,6 @@ import Autumn from "./assets/autumn_sample_2.png";
 //Material UI
 import {
   Button,
-  IconButton,
   Typography,
   Container,
   Grid,

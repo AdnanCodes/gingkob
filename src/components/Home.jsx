@@ -44,11 +44,10 @@ const Home = () => {
     <Container>
       <Grid container display="flex" direction="column" alignItems="center">
         <Card className={classes.root} elevation={0}>
-          {/* <CardActionArea> */}
           <CardMedia
             className={classes.media}
             image={Autumn}
-            title="Contemplative Reptile"
+            title="Autumn Smiling"
           />
           <CardContent>
             <Typography variant="h4" className="intro">
@@ -56,14 +55,22 @@ const Home = () => {
               Handmade Wardrobe
             </Typography>
           </CardContent>
-          {/* </CardActionArea> */}
-          <CardActions>
-            <Button component={Link} to="/about" size="small" color="primary">
-              Learn More
-            </Button>
-          </CardActions>
+          <Grid container display="flex" justify="center">
+            <CardActions>
+              <Button
+                component={Link}
+                to="/about"
+                size="medium"
+                color="secondary"
+                variant="contained"
+              >
+                <Typography variant="h5" gutterBottom>
+                  Learn More
+                </Typography>
+              </Button>
+            </CardActions>
+          </Grid>
         </Card>
-
         <Carousel />
       </Grid>
     </Container>

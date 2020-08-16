@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 // Styles
-import { Typography, Grid, Divider } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 
 //Icons
 import {
