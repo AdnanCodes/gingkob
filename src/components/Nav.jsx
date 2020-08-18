@@ -13,7 +13,7 @@ import { Link } from "react-router-dom";
 
 // Icon
 import MenuIcon from "@material-ui/icons/Menu";
-// import "./Nav.scss";
+import "./Nav.scss";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -70,6 +70,7 @@ const Navigation = () => {
         role={undefined}
         transition
         disablePortal
+        className="menu"
       >
         {({ TransitionProps, placement }) => (
           <Grow

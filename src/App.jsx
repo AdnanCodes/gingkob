@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, Link } from "react-router-dom";
 
 // Components
 import Home from "./components/Home.jsx";
@@ -30,7 +30,13 @@ function App() {
           alignContent="center"
           justify="space-between"
         >
-          <Typography align="center" variant="h1" className="title">
+          <Typography
+            align="center"
+            variant="h1"
+            className="title"
+            component={Link}
+            to="/"
+          >
             Gingko B.
           </Typography>
           <Navigation />

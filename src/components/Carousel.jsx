@@ -18,29 +18,16 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const tutorialSteps = [
   {
-    label: "San Francisco ",
-    imgPath:
-      "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+    label: "Knitting Pattern 1",
+    imgPath: "https://source.unsplash.com/BmrPEgNoVRY/640x426",
   },
   {
-    label: "Bird",
-    imgPath:
-      "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
+    label: "Knitting Pattern 2",
+    imgPath: "https://source.unsplash.com/y7NBxZuL-_w/640x426",
   },
   {
-    label: "Bali, Indonesia",
-    imgPath:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80",
-  },
-  {
-    label: "NeONBRAND Digital",
-    imgPath:
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60",
-  },
-  {
-    label: "Goč, Serbia",
-    imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+    label: "Knitting Pattern 3",
+    imgPath: "https://source.unsplash.com/ujaxQq0tB5A/640x426",
   },
 ];
 
@@ -87,7 +74,7 @@ function Carousel() {
 
   return (
     <div className={classes.root}>
-      <Grid container display="flex" justify="center">
+      <Grid container display="flex" justify="center" className="carousel">
         <Paper square elevation={0} className={classes.header}>
           <Typography variant="h3">
             {tutorialSteps[activeStep].label}
